@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype of Language Model</title>
+</head>
+<body>
+    <h1>Prototype of Language Model</h1>
+    <form action="/process" method="post">
+        <label for="training_data_path">Training Data Path:</label><br>
+        <input type="text" id="training_data_path" name="training_data_path"><br>
+        <label for="model_path">Model Path:</label><br>
+        <input type="text" id="model_path" name="model_path"><br>
+        <label for="fine_tuning_method">Fine-Tuning Method:</label><br>
+        <select id="fine_tuning_method" name="fine_tuning_method">
+            <option value="fully_fine_tuning">Fully Fine-Tuning</option>
+            <option value="quantized_fine_tuning">Quantized Fine-Tuning</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html> 
+
+
